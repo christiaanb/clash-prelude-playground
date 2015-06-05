@@ -16,4 +16,4 @@ testInput = match oscillate
   ; False_ _ -> signal Nothing
   }
   where
-    oscillate = let s = register False (not1 s) in s
+    oscillate = register False (not <$> oscillate)
