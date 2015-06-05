@@ -3,7 +3,7 @@
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE DataKinds    #-}
 module CLaSH.Signal.SynchronousCase
-  (Match (..))
+  (Match (..), MatchCon (..))
 where
 
 import CLaSH.Signal.Bundle   (unbundle')
